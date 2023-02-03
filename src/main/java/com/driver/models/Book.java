@@ -7,6 +7,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
+@Table
 public class Book {
 
     @Id
@@ -39,12 +40,11 @@ public class Book {
     public Book() {
     }
 
-    public Book(String name, Genre genre, Author author, Card card, boolean available) {
+    public Book(String name, Genre genre, Author author) {
         this.name = name;
         this.genre = genre;
         this.author = author;
-        this.card = card;
-        this.available = available;
+        this.available = true;
     }
 
     public int getId() {

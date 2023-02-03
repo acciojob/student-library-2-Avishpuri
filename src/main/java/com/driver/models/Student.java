@@ -8,6 +8,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
+@Table
 public class Student {
 
     @Id
@@ -51,12 +52,12 @@ public class Student {
                 '}';
     }
 
-    public Student(String emailId, String name, int age, String country, Card card) {
+    public Student(String emailId, String name, int age, String country) {
         this.emailId = emailId;
         this.name = name;
         this.age = age;
         this.country = country;
-        this.card = card;
+
     }
 
     public int getId() {

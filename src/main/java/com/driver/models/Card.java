@@ -9,6 +9,7 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
+@Table
 public class Card {
 
     @Id
@@ -36,12 +37,6 @@ public class Card {
         this.cardStatus = CardStatus.ACTIVATED;
     }
 
-    public Card(Student student, Date createdOn, Date updatedOn, CardStatus cardStatus) {
-        this.student = student;
-        this.createdOn = createdOn;
-        this.updatedOn = updatedOn;
-        this.cardStatus = cardStatus;
-    }
 
     public int getId() {
         return id;

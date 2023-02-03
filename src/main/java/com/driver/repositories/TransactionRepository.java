@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-@Repository
+
 public interface TransactionRepository extends JpaRepository<Transaction, Integer> {
 
     // sort on the basis of time to get the latest issual date
